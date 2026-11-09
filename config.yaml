@@ -1,0 +1,55 @@
+cap: 15
+ranking_mode: label_first
+net_revenue_pct: 1.0
+value_months: 12
+tpv_unit_rs: 100000
+cost_per_outreach_rs: 1500
+seasonal_industries: ["Gifting & Festive", "Education / Coaching", "Travel & Hospitality"]
+
+decline_gate_pct: 10
+growth_min_pct: 15
+low_volume_lakh: 5
+seasonal_shape:
+  m1_m3_spread_max_pct: 12
+  m4_max_of_baseline: 0.8
+  m6_rebound_min_pct: 10
+
+performance:
+  sr_drop_level2: 5
+  sr_drop_level3: 8
+service:
+  unresolved_level1: 2
+  unresolved_level2: 3
+  unresolved_level3: 5
+  low_csat_max: 2
+  low_csat_min_tickets: 3
+disengagement:
+  max_logins: 3
+  max_products: 2
+  min_decline_pct: 20
+  severe_logins: 1
+commercial:
+  renewal_window_days: 60
+urgency_days:
+  urgent: 15
+  soon: 30
+  upcoming: 60
+label:
+  min_causes_for_high: 2
+  projected_loss_high_pct: 50
+watch_min_level: 2
+scenario:
+  churn_likelihood: 0.75
+  save_rate: 0.25
+
+note_keywords:
+  COMPETITOR: "competitor|compar\\w* quote|quotes? from|exploring options|alternative provider|lower (mdr|rate)|switch(ing)? to"
+  RATE_CARD: "rate card|pricing review|renewal terms"
+  SERVICE_OPEN: "not (yet )?(closed|resolved|fixed)|escalat|replies? take too long|slow (support|response)|pending ticket|unresolved|still (open|pending)"
+  PERF_COMPLAINT: "\\bupi\\b|success rate|payment fail|drop-?offs?|declin\\w+ payments"
+  DISENGAGED: "no response|not responding|rarely used|new manager|unclear contact|unreachable"
+  SEASONAL_EXPLAINED: "seasonal|festive|peak season|off-?season"
+  POSITIVE: "growing|interested in|no concerns|expanding"
+  NEUTRAL: "never raised|low touch"
+resolution_words: "\\b(fixed|resolved|sorted)\\b|\\bclosed\\b"
+still_open_markers: "not (yet )?(closed|resolved|fixed)|\\bstill\\b|\\bpending\\b|\\bunresolved\\b|\\bbut\\b|\\bhowever\\b|no clear answer|\\bagain\\b"
